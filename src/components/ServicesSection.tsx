@@ -1,15 +1,15 @@
 
-import { Cloud, GitBranch, Terminal, Settings } from "lucide-react";
+import { Cloud, GitBranch, Terminal, Settings, Shield, Lock, Database } from "lucide-react";
 
 export const ServicesSection = () => {
   return (
     <section className="py-20 px-6 bg-[#F6F6F7]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#1A1F2C]">
-          Our DevOps Services
+          Our DevOps & Security Services
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
               icon: Cloud,
@@ -25,6 +25,21 @@ export const ServicesSection = () => {
               icon: Terminal,
               title: "Infrastructure as Code",
               desc: "Version-controlled infrastructure with modern IaC tools"
+            },
+            {
+              icon: Shield,
+              title: "DevSecOps",
+              desc: "Integrated security practices throughout the development lifecycle"
+            },
+            {
+              icon: Lock,
+              title: "Security Services",
+              desc: "Comprehensive security audits and threat prevention"
+            },
+            {
+              icon: Database,
+              title: "Container Orchestration",
+              desc: "Kubernetes and Docker implementation and management"
             },
             {
               icon: Settings,
