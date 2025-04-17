@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --primary-blue: 199 89% 48%;
+    --dark-blue: 222 24% 14%;
+    --light-gray: 220 14% 96%;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
