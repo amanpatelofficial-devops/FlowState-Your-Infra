@@ -2,6 +2,7 @@
 import { HeroSection } from "../components/HeroSection";
 import { ServicesSection } from "../components/ServicesSection";
 import { ProcessSection } from "../components/ProcessSection";
+import { VideoSection } from "../components/VideoSection";
 import { Footer } from "../components/Footer";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <div className="relative z-10">
         <HeroSection />
         <ServicesSection />
+        <VideoSection />
         <ProcessSection />
         <Footer />
       </div>
