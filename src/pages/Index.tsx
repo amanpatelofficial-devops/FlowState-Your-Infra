@@ -6,10 +6,16 @@ import { Footer } from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1A1F2C] via-[#2A2F3C] to-[#3A3F4C] bg-fixed">
-      <div className="relative">
+    <div className="min-h-screen bg-gradient-to-br from-[#1A1F2C] via-[#2A2F3C] to-[#3A3F4C] bg-fixed relative overflow-hidden">
+      {/* Subtle background particles/overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-transparent to-black/20 pointer-events-none" />
+      
+      {/* Animated background elements */}
+      <div className="absolute -top-20 -right-20 w-96 h-96 bg-[#0EA5E9]/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-[#38BDF8]/20 rounded-full blur-3xl animate-pulse delay-500" />
+      
+      <div className="relative z-10">
         <HeroSection />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 pointer-events-none" />
         <ServicesSection />
         <ProcessSection />
         <Footer />
